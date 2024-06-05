@@ -13,9 +13,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: inset 0px 0px 30px 5px rgba(0, 0, 0, 0.521)
 }
 
 .mainContainer{
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,6 +83,10 @@ ul, li{
 
 .number:hover{
     background-color: rgb(54, 54, 54);
+}
+
+.number:active{
+    background-color: rgb(48, 48, 48);
 }
 
 #soma{
@@ -161,4 +167,144 @@ ul, li{
 
 #igual:hover{
     background-color: rgb(48, 100, 168);
+}
+
+#clear {
+    width: 100%;
+    height: 100%;
+    font-size: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(58, 58, 58);
+    border-radius: 10px;
+}
+
+#clear:hover {
+    background-color: rgb(70, 70, 70);
+}
+
+#soma:active{
+    background-color: rgb(46, 46, 46);
+}
+#subtracao:active{
+    background-color: rgb(46, 46, 46);
+}
+#divisao:active{
+    background-color: rgb(46, 46, 46);
+}
+#multiplicacao:active{
+    background-color: rgb(46, 46, 46);
+}
+#igual:active{
+    background-color: rgb(33, 80, 141);
+}   
+#clear:active{
+    background-color: rgb(46, 46, 46);
+}
+
+.history{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    bottom: 1;
+    width: 20%;
+    height: 50%;
+}
+
+.historytitle{
+    background-color: rgb(24, 24, 24);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(221, 221, 221);
+    border-radius: 10px 0px 0px 0px;
+}
+
+.historycontent {
+    width: 100%;
+    height: 90%;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    border-radius: 0px 0px 0px 10px;
+}
+
+#historyTextDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    background-color: rgb(211, 211, 211);
+    overflow-y: auto;
+}
+
+.limparHistory{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(184, 183, 183);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0px 0px 0px 10px;
+    user-select: none;
+}
+
+.limparHistory:hover{
+    background-color: rgb(156, 156, 156);
+    cursor: pointer;
+}
+
+.limparHistory:active{
+    background-color: rgb(114, 114, 114);
+}
+
+.autor{
+    display: flex;
+    position: absolute;
+    width: 7%;
+    bottom: 0;
+    justify-content: center;
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.autor:hover{
+    cursor: pointer;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilo da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+}
+
+/* Estilo da trilha da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor de fundo da trilha */
+}
+
+/* Estilo do polegar (thumb) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Cor do polegar */
+    border-radius: 2px;
 }
